@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#minute,
+#second,
+#millie {
+  font-size: 20vmin;
+  margin: 0 5px;
+}
+
+#millie {
+  font-size: 10vmin;
+}
+
+.label {
+  font-size: 10vmin;
+}
+
+.container {
+  user-select: none;
+  cursor: pointer;
+}
+
+#popup {
+  animation: fade 3s ease forwards;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20vmin;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+  }
+}
